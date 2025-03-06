@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/maldives.jpg" alt="logo" width="100px" height="100px">
+        <h1>island</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="dashboard.html #home" target="_self">home</a></li>
+                <li><a href="assets/pages/about.html">about</a></li>
+                <li><a href="assets/pages/services.html">services</a></li>
+                <li><a href="assets/pages/contact.html">contact</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home hero">
+        <h2>Hello, <?php echo htmlspecialchars($_SESSION['username']); ? Welcome to Maldives Island >!</h2>
+        <p>
+            Discover the beauty of the Maldives with us. Enjoy the serene beaches, luxurious resorts, and unforgettable experiences.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 All rights are reserved.</p>
+        <p>
+            <a href="https://www.reddit.com" target="_blank"><i class="fab fa-reddit"></i> Reddit</a>
+            <a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="mailto:travelagency@example.com"><i class="fas fa-envelope"></i> Email Us</a>
+        </p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

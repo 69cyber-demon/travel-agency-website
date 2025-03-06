@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: big shoulders inline, sans-serif;
+}
+body{
+    background-color:#00df82;
+    color: #fff;
+}
+img{
+    border-radius: 50px;
+}
+header{
+    background-color: #030f0f;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #00df82;
+}
+.hero {
+    height: 100vh;
+    background: url('/assets/images/maldivesbc.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5em;
+    max-width: 600px;
+}
+section {
+    height: 100vh;
+    background-color: #03624c;
+    padding: 20px;
+    margin-top: 100px;/* Adjusted to account for fixed header */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+table, tr, td, th{
+    border: solid 1px;
+    border-style: dashed;
+    padding: 10px;
+    border-collapse: collapse;
+}
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: max-content;
+    padding: 20px;
+}
+.main_form {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.main_form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.main_form input[type="text"],
+.main_form input[type="email"],
+.main_form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main_form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00df82;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.main_form input[type="submit"]:hover {
+    background-color: #00b76f;
+}
+.main_form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #00df82;
+    text-decoration: none;
+}
+.main_form a:hover {
+    text-decoration: underline;
+}
+/* Add transitions to input fields */
+.main_form input[type="text"],
+.main_form input[type="email"],
+.main_form input[type="password"] {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.main_form input[type="text"]:focus,
+.main_form input[type="email"]:focus,
+.main_form input[type="password"]:focus {
+    border-color: #00df82;
+    box-shadow: 0 0 5px rgba(0, 223, 130, 0.5);
+}
+
+/* Add transitions to links */
+.main_form a {
+    transition: color 0.3s;
+}
+
+.main_form a:hover {
+    color: #00b76f;
+}
+/* Add hover effects to buttons */
+.main_form input[type="submit"]:hover {
+    background-color: #00b76f;
+    transform: scale(1.05);
+}
+
+/* Add keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to form elements */
+.main_form {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.main_form input[type="text"],
+.main_form input[type="email"],
+.main_form input[type="password"] {
+    animation: slideIn 0.5s ease-in-out;
+}

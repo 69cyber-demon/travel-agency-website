@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login" method="get">
+        <label for="username">username:</label><br>
+        <input type="text" id="username" name="username"> <br><br>
+
+        <label for="password"password:>password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+<!--
+Action this is where sends data when form is submitted the value of this attribute is typycally the url 
+
+Method - this attribute defines the http method used to send form data. the value can be: "POST", "GET"
+
+Target - this attribute specifies where to display the responce recieved after transmitting the form. values are: "_blank", "_top", "_parent", "_self", "item name or id"
+
+enctype(encryption type) - this attribute is used with method ="post" it specifies how the form data should be encoded when submitting to the SERVER. the values can be : 
+"application/x-www-form-urlencoded" 
+"multipart/ form-data"
+"text/plain"
+
+Autocomplete - this attribute specifies whether a form should have auto complete on / off. when it is on the browser automatically completes values based on the values the user has entered before.
+
+noValidate - this boolean attribute specifies that the form data should not be validated on submission.
+-->
